@@ -220,17 +220,7 @@ class gui:
         self.img_temp = ni.main(self.img)
         self.number = predict.find(self.img_temp, model)
         
-        if self.info['name'] == 'english_alphabet':
-            
-            self.make_lable(f"Prediction is: {english_alphabet[self.number[0]]}")  
-                
-        elif self.info['name'] == 'persian_alphabet':
-            
-            self.make_lable(f"Prediction is: {persian_alphabet[self.number[0]]}")  
-                
-        elif self.info['name'] == 'persian_number':
-            
-            self.make_lable(f"Prediction is: {numbers_mapping[self.number[0]]}")  
+        self.make_lable(f"Prediction is: {persian_alphabet[self.number[0]]}")  
         
         self.percentage(self.number)
         self.drawing_complete = False
@@ -240,20 +230,9 @@ class gui:
         self.table = True
         percentages = []
         
-        if self.info['name'] == 'english_alphabet':
-            l = list(english_alphabet.values())
-            for i in range(26):
-                percentages.append((l[i],number[1][i])) 
-                        
-        elif self.info['name'] == 'persian_alphabet':
-            l = list(persian_alphabet.values())
-            for i in range(32):
-                percentages.append((l[i],number[1][i])) 
-                
-        elif self.info['name'] == 'persian_number':
-            l = list(numbers_mapping.values())
-            for i in range(10):
-                percentages.append((l[i],number[1][i])) 
+        l = list(persian_alphabet.values())
+        for i in range(32):
+            percentages.append((l[i],number[1][i]))
         
         style = ttk.Style(self.tab2)
         
