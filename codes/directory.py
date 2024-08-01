@@ -13,5 +13,4 @@ def add():
 
 
 hand_write_English_alphabet = 'files/neural network/English alphabet.h5'
-hand_write_persian_number = 'files/neural network/persian_number.h5'
 hand_write_persian_alphabet = 'files/neural network/persian_alphabet.h5'
