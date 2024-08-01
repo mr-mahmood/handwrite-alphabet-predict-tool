@@ -20,19 +20,6 @@ def persian_alphabet():
     root.destroy()
     a = gui(info)
     a.start()
-    
-def persian_number():
-    address = directory.add()
-    info = {}
-    info['name'] = 'persian_number'
-    info['h5'] = address + directory.hand_write_persian_number
-    root.destroy()
-    a = gui(info)
-    a.start()
-
-
-
-
 
 
 color1 = 'white'
@@ -69,20 +56,8 @@ b2 = Button(
         command=persian_alphabet,
         )
 
-b3= Button(
-        main_frame,
-        background=color2,
-        foreground=color1,
-        width=15,
-        height=2,
-        cursor='hand2',
-        text='persian number',
-        font=('Arial', 16, 'bold'),
-        command=persian_number,
-        )
 
 b1.place(x=50,y=0)
 b2.place(x=50,y=110)
-b3.place(x=50,y=220)
         
 root.mainloop()

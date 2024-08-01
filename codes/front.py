@@ -25,11 +25,6 @@ persian_alphabet = {
     27: 'م', 28: 'ن', 29: 'و', 30: 'ه', 31: 'ی'
 }
 
-# Numbers mapping
-numbers_mapping = {i: str(i) for i in range(11)}
-
-
-
 class gui:   
     
     
