@@ -14,9 +14,6 @@ import normalize_image as ni
 color1 = 'white'
 color2 = 'BLACK'
 
-# English alphabet mapping
-english_alphabet = {i: chr(65 + i) for i in range(26)}
-
 # Persian alphabet mapping, 32 characters
 persian_alphabet = {
     0 : 'آ', 1 : 'ب', 2 : 'پ', 3 : 'ت', 4 : 'ث', 5 : 'ج', 6 : 'چ', 7 : 'ح', 8 : 'خ',
@@ -24,11 +21,6 @@ persian_alphabet = {
     18: 'ط', 19: 'ظ', 20: 'ع', 21: 'غ', 22: 'ف', 23: 'ق', 24: 'ک', 25: 'گ', 26: 'ل',
     27: 'م', 28: 'ن', 29: 'و', 30: 'ه', 31: 'ی'
 }
-
-# Numbers mapping
-numbers_mapping = {i: str(i) for i in range(11)}
-
-
 
 class gui:   
     

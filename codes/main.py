@@ -7,7 +7,6 @@ def persian_alphabet():
     info = {}
     info['name'] = 'persian_alphabet'
     info['h5'] = address + directory.hand_write_persian_alphabet
-    root.destroy()
     a = gui(info)
     a.start()
 
