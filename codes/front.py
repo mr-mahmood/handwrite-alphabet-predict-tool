@@ -17,19 +17,6 @@ color2 = 'BLACK'
 # English alphabet mapping
 english_alphabet = {i: chr(65 + i) for i in range(26)}
 
-# Persian alphabet mapping, 32 characters
-persian_alphabet = {
-    0 : 'آ', 1 : 'ب', 2 : 'پ', 3 : 'ت', 4 : 'ث', 5 : 'ج', 6 : 'چ', 7 : 'ح', 8 : 'خ',
-    9 : 'د', 10: 'ذ', 11: 'ر', 12: 'ز', 13: 'ژ', 14: 'س', 15: 'ش', 16: 'ص', 17: 'ض',
-    18: 'ط', 19: 'ظ', 20: 'ع', 21: 'غ', 22: 'ف', 23: 'ق', 24: 'ک', 25: 'گ', 26: 'ل',
-    27: 'م', 28: 'ن', 29: 'و', 30: 'ه', 31: 'ی'
-}
-
-# Numbers mapping
-numbers_mapping = {i: str(i) for i in range(11)}
-
-
-
 class gui:   
     
     
@@ -220,17 +207,7 @@ class gui:
         self.img_temp = ni.main(self.img)
         self.number = predict.find(self.img_temp, model)
         
-        if self.info['name'] == 'english_alphabet':
-            
-            self.make_lable(f"Prediction is: {english_alphabet[self.number[0]]}")  
-                
-        elif self.info['name'] == 'persian_alphabet':
-            
-            self.make_lable(f"Prediction is: {persian_alphabet[self.number[0]]}")  
-                
-        elif self.info['name'] == 'persian_number':
-            
-            self.make_lable(f"Prediction is: {numbers_mapping[self.number[0]]}")  
+        self.make_lable(f"Prediction is: {english_alphabet[self.number[0]]}") 
         
         self.percentage(self.number)
         self.drawing_complete = False
@@ -240,20 +217,9 @@ class gui:
         self.table = True
         percentages = []
         
-        if self.info['name'] == 'english_alphabet':
-            l = list(english_alphabet.values())
-            for i in range(26):
-                percentages.append((l[i],number[1][i])) 
-                        
-        elif self.info['name'] == 'persian_alphabet':
-            l = list(persian_alphabet.values())
-            for i in range(32):
-                percentages.append((l[i],number[1][i])) 
-                
-        elif self.info['name'] == 'persian_number':
-            l = list(numbers_mapping.values())
-            for i in range(10):
-                percentages.append((l[i],number[1][i])) 
+        l = list(english_alphabet.values())
+        for i in range(26):
+            percentages.append((l[i],number[1][i]))
         
         style = ttk.Style(self.tab2)
         
