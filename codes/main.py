@@ -7,7 +7,6 @@ def english_alphabet():
     info = {}
     info['name'] = 'english_alphabet'
     info['h5'] = address + directory.hand_write_English_alphabet
-    root.destroy()
     a = gui(info)
     a.start()
 
