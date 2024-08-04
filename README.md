@@ -1,6 +1,6 @@
 ***
-![_a20d4a29-acc0-40a3-aaf4-039e17c4b3e2](https://github.com/user-attachments/assets/34700ff6-8794-406d-b440-6a80ac575207)
-
+<img src="handwrite-digit-predict-tool/files/github image
+/1.png" alt="Alt text" width="300"/>
 ***
 # Hand write alphabet prediction ✅
 ### This project is a machine learning model designed to predict handwritten alphabet in english and persian. The model is trained on the MNIST dataset (english alphabet MNIST), which consists of 360,000 images and, Personal collected database for persian alphabet, which consists of 12,000 images of handwritten alphabet. The project includes a user interface built with Tkinter for easy interaction and visualization.
