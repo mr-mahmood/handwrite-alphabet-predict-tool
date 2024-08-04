@@ -1,8 +1,6 @@
-
-<p align="center">
-  <a href="https://quera.org/"><img src="handwrite-digit-predict-tool/files/github image
-/1.jpg" width="100" title="کوئرا - حل سوالات برنامه نویسی"></a>
-</p>
+***
+<img src="handwrite-digit-predict-tool/files/github image
+/1.jpg" alt="Alt text" width="300"/>
 ***
 # Hand write alphabet prediction ✅
 ### This project is a machine learning model designed to predict handwritten alphabet in english and persian. The model is trained on the MNIST dataset (english alphabet MNIST), which consists of 360,000 images and, Personal collected database for persian alphabet, which consists of 12,000 images of handwritten alphabet. The project includes a user interface built with Tkinter for easy interaction and visualization.
