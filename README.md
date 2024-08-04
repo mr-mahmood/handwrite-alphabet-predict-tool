@@ -1,6 +1,6 @@
+***
 
-[photo](files/github image/1.png)
-
+<img src="files/github%20image/1.png" alt="Alt text"/>
 
 ***
 # Hand write alphabet prediction ✅
@@ -15,9 +15,9 @@
 ***
 # Installation
 ### Clone the Repository:
-```git
-git clone https://github.com/mr-mahmood/handwritten-digit-prediction.git
-cd handwritten-digit-prediction
+```
+git clone https://github.com/mr-mahmood/handwritten-alphabet-prediction.git
+cd handwritten-alphabet-prediction
 ```
 
 ### Create a Virtual Environment:
@@ -33,9 +33,8 @@ source venv/bin/activate  # On macOS/Linux
 ```python
 python main.py
 ```
-
-* Draw a Digit: Use the Tkinter interface to draw a digit.
-* Predict: Click the “Predict” button to see the predicted digit.
+* Draw a letter of the alphabet: Use the Tkinter interface to draw it.
+* Predict: Click the “Predict” button to see the predicted alphabet.
 
 ***
 
