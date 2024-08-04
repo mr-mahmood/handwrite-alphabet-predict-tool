@@ -91,4 +91,5 @@ model.fit(x_train, y_train, batch_size=100, epochs=20, validation_split=0.1, cal
 ***
 # Attention⚠️
 * ### The training scripts and dataset are not included in the repository because of file size Limitation in github.
+* ### All images that model is trained base on them are 28X28 pixcels with gray scale.
 * ### Contributions are welcome! Please fork the repository and submit a pull request.
